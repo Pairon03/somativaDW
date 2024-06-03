@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ConectaCell</title>
+    
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/sprites/icon.png" />
+</head>
+<body>
+    <div class="container-scroller">
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+                <a class="navbar-brand brand-logo"><img src="C:\Users\dsadm\Desktop\Caua\DW\somativaDW\Somativa Cauã\ConectaCell - Copia.jpg" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="C:\Users\dsadm\Desktop\Caua\DW\somativaDW\Somativa Cauã\ConectaCell.jpg" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+                <div class="search-field d-none d-md-block">
+                    <form class="d-flex align-items-center h-100" action="#">
+                        <div class="input-group">
+                            <div class="input-group-prepend bg-transparent">
+                                <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                            </div>
+                            <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+                        </div>
+                    </form>
+                </div>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+                        <img src="C:\Users\dsadm\Desktop\Caua\DW\somativaDW\Somativa Cauã\ConectaCell - Copia.jpg" width="100" height="38" alt="profile">    
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item nav-profile">
+                        <a href="#" class="nav-link">
+                            <div class="nav-profile-image">
+                                <img src="C:\Users\dsadm\Desktop\Caua\DW\somativaDW\Somativa Cauã\ConectaCell.jpg" alt="profile" />
+                                <span class="login-status online"></span>
+                            </div>
+                            <div class="nav-profile-text d-flex flex-column">
+                                <span class="font-weight-bold mb-2">ConectaCell</span>
+                                <span class="text-secondary text-small">Cauã Moura</span>
+                            </div>
+                            <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <span class="menu-title">Dashboard</span>
+                            <i class="mdi mdi-home menu-icon"></i>
+                        </a>
+                    </li>
+  
+                    <li class="nav-item">
+                        <a class="nav-link" href="docs/documentation.html" target="_blank">
+                            <span class="menu-title">Quem somos nós?</span>
+                            <i class="mdi mdi-file-document-box menu-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="page-header">
+                        <h3 class="page-title">
+                            <span class="page-title-icon bg-gradient-primary text-white me-2">
+                                <i class="mdi mdi-home"></i>
+                            </span> Desempenho de Vendas
+                        </h3>
+                       
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 stretch-card grid-margin">
+                            <div class="card bg-gradient-danger card-img-holder text-white">
+                                <div class="card-body">
+                                    <img src="C:\Users\dsadm\Desktop\Caua\DW\somativaDW\Somativa Cauã\iphone.png" class="card-img-absolute" alt="circle-image" />
+                                    <h4 class="font-weight-normal mb-3">Apple<i class="mdi mdi-chart-line mdi-24px float-end"></i></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 stretch-card grid-margin">
+                            <div class="card bg-gradient-info card-img-holder text-white">
+                                <div class="card-body">
+                                    <img src="C:\Users\dsadm\Desktop\Caua\DW\somativaDW\Somativa Cauã\samsung.png" class="card-img-absolute" alt="circle-image" />
+                                    <h4 class="font-weight-normal mb-3">Samsung<i class="mdi mdi-bookmark-outline mdi-24px float-end"></i></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 stretch-card grid-margin">
+                            <div class="card bg-gradient-success card-img-holder text-white">
+                                <div class="card-body">
+                                    <img src="C:\Users\dsadm\Desktop\Caua\DW\somativaDW\Somativa Cauã\xiaomi.png" class="card-img-absolute" alt="circle-image" style="width: 100px; height: auto;"/>
+                                    <h4 class="font-weight-normal mb-3">Xiaomi</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Vendas por Marca Mensal</h4>
+                                    <canvas id="barChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Vendas do Semestre</h4>
+                                    <canvas id="lineChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Distribuição de Marcas</h4>
+                                    <canvas id="pieChart1"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Distribuição de Modelos</h4>
+                                    <canvas id="pieChart2"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Vendas Anuais por Marca</h4>
+                                    <canvas id="barChartAnual"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">ConectaCell, Cauã Moura</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/chart.js/chart.umd.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script>
+        // Gráfico de Barras
+        var ctxBar = document.getElementById('barChart').getContext('2d');
+        new Chart(ctxBar, {
+            type: 'bar',
+            data: {
+                labels: ['Apple', 'Samsung', 'Xiaomi'],
+                datasets: [{
+                    label: 'Vendas',
+                    data: [12, 19, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Gráfico de Linha
+        var ctxLine = document.getElementById('lineChart').getContext('2d');
+        new Chart(ctxLine, {
+            type: 'line',
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'],
+                datasets: [{
+                    label: 'Vendas do Semestre',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                }]
+            }
+        });
+
+        // Gráfico de Pizza
+        var ctxPie1 = document.getElementById('pieChart1').getContext('2d');
+        new Chart(ctxPie1, {
+            type: 'pie',
+            data: {
+                labels: ['Apple', 'Samsung', 'Xiaomi'],
+                datasets: [{
+                    label: 'Distribuição de Marcas',
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    hoverOffset: 4
+                }]
+            }
+        });
+
+        // Gráfico de Pizza
+        var ctxPie2 = document.getElementById('pieChart2').getContext('2d');
+        new Chart(ctxPie2, {
+            type: 'pie',
+            data: {
+                labels: ['Iphone 13', 'Samsung Galaxy A13', 'Xiaomi Redmi 13c'],
+                datasets: [{
+                    label: 'Distribuição de Modelos',
+                    data: [150, 250, 50],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    hoverOffset: 4
+                }]
+            }
+        });
+
+        // Gráfico de Barras Anuais por Marca
+        var ctxBarAnual = document.getElementById('barChartAnual').getContext('2d');
+        new Chart(ctxBarAnual, {
+            type: 'bar',
+            data: {
+                labels: ['2018', '2019', '2020', '2021', '2022'],
+                datasets: [
+                    {
+                        label: 'Apple',
+                        data: [25, 30, 25, 20, 22],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Samsung',
+                        data: [15, 20, 30, 35, 38],
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Xiaomi',
+                        data: [5, 2, 15, 20, 15],
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
